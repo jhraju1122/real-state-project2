@@ -1,30 +1,30 @@
 [
+    
     {
-      "image": "https://i.ibb.co/jgjx6Vc/commercial-property-hero-image.webp",
-      "estate_title": "Luxury Villa",
-      "id": 1,
-      "segment_name": "Residential",
-      "description": "A beautiful luxury villa with 5 bedrooms and a private pool.",
-      "price": "$1,200,000",
-      "status": "sale"
-    },
-    {
-      "image": "https://i.ibb.co/Sf2qLdV/dasdasda.jpg",
+      "image": "https://i.ibb.co/jfPnzv7/asdasdas.jpg",
       "estate_title": "Modern Apartment",
       "id": 2,
       "segment_name": "Residential",
       "description": "A spacious 3-bedroom apartment in the city center.",
       "price": "$3,500/month",
-      "status": "rent"
+      "status": "rent",
+      "area": "1800 sq ft",
+      "location": "New York, NY",
+      "facilities": ["living room", "gym", "kitchen", "balcony"],
+      "view_property": "https://example.com/property2"
     },
     {
-      "image": "https://i.ibb.co/Db58h6z/commercial-real-estate.webp",
+      "image": "https://i.ibb.co/rQT5gLY/sdfsdfsd.jpg",
       "estate_title": "Commercial Office Space",
       "id": 3,
       "segment_name": "Commercial",
       "description": "Prime office space located in the business district.",
       "price": "$850,000",
-      "status": "sale"
+      "status": "sale",
+      "area": "3000 sq ft",
+      "location": "San Francisco, CA",
+      "facilities": ["conference room", "reception", "kitchen"],
+      "view_property": "https://example.com/property3"
     },
     {
       "image": "https://i.ibb.co/2PPVkCs/adasdasdas.jpg",
@@ -33,25 +33,61 @@
       "segment_name": "Residential",
       "description": "A charming cottage with a lovely garden and 2 bedrooms.",
       "price": "$2,000/month",
-      "status": "rent"
+      "status": "rent",
+      "area": "1200 sq ft",
+      "location": "Portland, OR",
+      "facilities": ["living room", "garden", "kitchen", "fireplace"],
+      "view_property": "https://example.com/property4"
     },
     {
-      "image": "https://i.ibb.co/rQT5gLY/sdfsdfsd.jpg",
+      "image": "https://i.ibb.co/Db58h6z/commercial-real-estate.webp",
       "estate_title": "Industrial Warehouse",
       "id": 5,
       "segment_name": "Industrial",
       "description": "Large warehouse suitable for various industrial uses.",
       "price": "$1,500,000",
-      "status": "sale"
+      "status": "sale",
+      "area": "10000 sq ft",
+      "location": "Houston, TX",
+      "facilities": ["storage area", "loading dock", "office space"],
+      "view_property": "https://example.com/property5"
     },
     {
-      "image": "https://i.ibb.co/jfPnzv7/asdasdas.jpg",
+      "image": "https://i.ibb.co/Sf2qLdV/dasdasda.jpg",
       "estate_title": "Retail Shop",
       "id": 6,
       "segment_name": "Commercial",
       "description": "A retail shop located in a high-traffic shopping area.",
       "price": "$5,000/month",
-      "status": "rent"
+      "status": "rent",
+      "area": "1500 sq ft",
+      "location": "Chicago, IL",
+      "facilities": ["display area", "storage room", "restroom"],
+      "view_property": "https://example.com/property6"
+    },
+    {
+      "image": "https://i.ibb.co/jgjx6Vc/commercial-property-hero-image.webp",
+      "estate_title": "Beachfront Condo",
+      "id": 7,
+      "segment_name": "Residential",
+      "description": "A luxurious condo with stunning ocean views.",
+      "price": "$4,000,000",
+      "status": "sale",
+      "area": "2200 sq ft",
+      "location": "Miami, FL",
+      "facilities": ["living room", "swimming pool", "kitchen", "balcony", "gym"],
+      "view_property": "https://example.com/property7"
     }
   ]
+  
+
+
+
+
+
+ 
+   
+   
+   
+    
   

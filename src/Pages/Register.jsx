@@ -19,17 +19,18 @@ const Register = () => {
                 </label>
                 <input type="text" placeholder="Name" className="input input-bordered" required />
               </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Number</span>
-                </label>
-                <input type="number" placeholder="Your Phone number" className="input input-bordered" required />
-              </div>
+             
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
                 </label>
                 <input type="email" placeholder="email" className="input input-bordered" required />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Photo Url</span>
+                </label>
+                <input type="text" placeholder="Photo url" className="input input-bordered" required />
               </div>
               <div className="form-control">
                 <label className="label">
