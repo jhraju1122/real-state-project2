@@ -1,0 +1,57 @@
+[
+    {
+      "image": "https://i.ibb.co/jgjx6Vc/commercial-property-hero-image.webp",
+      "estate_title": "Luxury Villa",
+      "id": 1,
+      "segment_name": "Residential",
+      "description": "A beautiful luxury villa with 5 bedrooms and a private pool.",
+      "price": "$1,200,000",
+      "status": "sale"
+    },
+    {
+      "image": "https://i.ibb.co/Sf2qLdV/dasdasda.jpg",
+      "estate_title": "Modern Apartment",
+      "id": 2,
+      "segment_name": "Residential",
+      "description": "A spacious 3-bedroom apartment in the city center.",
+      "price": "$3,500/month",
+      "status": "rent"
+    },
+    {
+      "image": "https://i.ibb.co/Db58h6z/commercial-real-estate.webp",
+      "estate_title": "Commercial Office Space",
+      "id": 3,
+      "segment_name": "Commercial",
+      "description": "Prime office space located in the business district.",
+      "price": "$850,000",
+      "status": "sale"
+    },
+    {
+      "image": "https://i.ibb.co/2PPVkCs/adasdasdas.jpg",
+      "estate_title": "Cozy Cottage",
+      "id": 4,
+      "segment_name": "Residential",
+      "description": "A charming cottage with a lovely garden and 2 bedrooms.",
+      "price": "$2,000/month",
+      "status": "rent"
+    },
+    {
+      "image": "https://i.ibb.co/rQT5gLY/sdfsdfsd.jpg",
+      "estate_title": "Industrial Warehouse",
+      "id": 5,
+      "segment_name": "Industrial",
+      "description": "Large warehouse suitable for various industrial uses.",
+      "price": "$1,500,000",
+      "status": "sale"
+    },
+    {
+      "image": "https://i.ibb.co/jfPnzv7/asdasdas.jpg",
+      "estate_title": "Retail Shop",
+      "id": 6,
+      "segment_name": "Commercial",
+      "description": "A retail shop located in a high-traffic shopping area.",
+      "price": "$5,000/month",
+      "status": "rent"
+    }
+  ]
+  
