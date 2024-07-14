@@ -7,23 +7,22 @@ const Register = () => {
  
 
   const handleRegister = e =>{
-    e.preventDefault();
-    console.log(e.currentTarget);
-    const form = new FormData(e.currentTarget);
-    const name = form.get('name');
-    const photo = form.get('photo');
-    const email = form.get('email');
-    const password = form.get('password');
-    console.log(email,name, photo, password);
+    e.preventDefault()
+     const name = e.target.name.value;
+     const photo = e.target.photo.value;
+     const email = e.target.email.value;
+     const password = e.target.password.value;
 
-    // create user
-    createUser(email, password)
-    .then(result =>{
-      console.log(result.user)
-    })
-    .catch(error =>{
-      console.log(error) 
-    })
+     console.log(name, photo, email, password)
+
+    // // create user
+    // createUser(email, password)
+    // .then(result =>{
+    //   console.log(result.user)
+    // })
+    // .catch(error =>{
+    //   console.log(error) 
+    // })
   }
 
 
@@ -75,7 +74,7 @@ const Register = () => {
               </div>
             </form>
             <p>You have already an account? please <Link to="/login">
-            <button className="btn btn-link">Login</button>
+            <button type='submit' className="btn btn-link">Login</button>
             </Link>
 
 
