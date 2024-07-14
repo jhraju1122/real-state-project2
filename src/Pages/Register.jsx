@@ -1,6 +1,35 @@
-import React from 'react';
+ 
+import { useContext } from 'react';
+import { Link } from 'react-router-dom';
+ 
 
 const Register = () => {
+ 
+
+  const handleRegister = e =>{
+    e.preventDefault();
+    console.log(e.currentTarget);
+    const form = new FormData(e.currentTarget);
+    const name = form.get('name');
+    const photo = form.get('photo');
+    const email = form.get('email');
+    const password = form.get('password');
+    console.log(email,name, photo, password);
+
+    // create user
+    createUser(email, password)
+    .then(result =>{
+      console.log(result.user)
+    })
+    .catch(error =>{
+      console.log(error) 
+    })
+  }
+
+
+
+
+
     return (
         <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
@@ -12,31 +41,31 @@ const Register = () => {
             </p>
           </div>
           <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-            <form className="card-body">
+            <form onSubmit={handleRegister} className="card-body">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Name</span>
                 </label>
-                <input type="text" placeholder="Name" className="input input-bordered" required />
+                <input type="text" name='name' placeholder="Name" className="input input-bordered" required />
               </div>
              
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
                 </label>
-                <input type="email" placeholder="email" className="input input-bordered" required />
+                <input type="email" name='email' placeholder="email" className="input input-bordered" required />
               </div>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Photo Url</span>
                 </label>
-                <input type="text" placeholder="Photo url" className="input input-bordered" required />
+                <input type="text" name='photo' placeholder="Photo url" className="input input-bordered" required />
               </div>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
-                <input type="password" placeholder="password" className="input input-bordered" required />
+                <input type="password" name='password' placeholder="password" className="input input-bordered" required />
                 <label className="label">
                   <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                 </label>
@@ -45,6 +74,12 @@ const Register = () => {
                 <button className="btn btn-primary">Login</button>
               </div>
             </form>
+            <p>You have already an account? please <Link to="/login">
+            <button className="btn btn-link">Login</button>
+            </Link>
+
+
+            </p>
           </div>
         </div>
       </div>
