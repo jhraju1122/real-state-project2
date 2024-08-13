@@ -2,7 +2,8 @@ import React from 'react';
 
 const Card = () => {
     return (
-      <div className='grid grid-cols-3'>
+      
+      <div className='grid grid-cols-3 mt-16'>
           <div className="card bg-base-100 w-96 shadow-xl">
         <figure>
           <img
