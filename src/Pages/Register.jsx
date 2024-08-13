@@ -1,6 +1,7 @@
  
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from '../Home/Navbar';
  
 
 const Register = () => {
@@ -30,6 +31,8 @@ const Register = () => {
 
 
     return (
+      <div>
+        <Navbar></Navbar>
         <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left">
@@ -81,6 +84,7 @@ const Register = () => {
             </p>
           </div>
         </div>
+      </div>
       </div>
     );
 };

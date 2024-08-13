@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from '../Home/Navbar';
 
 const Login = () => {
 
@@ -14,6 +15,9 @@ const Login = () => {
 
 
     return (
+      
+      <div>
+        <Navbar></Navbar>
         <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left">
@@ -46,6 +50,7 @@ const Login = () => {
             </form>
           </div>
         </div>
+      </div>
       </div>
     );
 };

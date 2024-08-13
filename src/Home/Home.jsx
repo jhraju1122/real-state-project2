@@ -9,7 +9,10 @@ const Home = () => {
         <div>
             <Navbar></Navbar>
             <Banner></Banner>
+            <div className='grid col-span-3'>
             <Card></Card>
+            </div>
+          
             <Footer></Footer>
         </div>
     );

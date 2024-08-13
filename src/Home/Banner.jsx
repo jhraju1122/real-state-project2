@@ -2,8 +2,8 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div className="carousel w-full">
-        <div id="slide1" className="carousel-item relative w-full">
+        <div className="carousel w-full ">
+        <div id="slide1" className="carousel-item relative w-full h-[500px]">
           <img
             src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
             className="w-full" />
