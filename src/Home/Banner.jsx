@@ -2,44 +2,84 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div className="carousel w-full ">
-        <div id="slide1" className="carousel-item relative w-full h-[500px]">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
-            className="w-full" />
-          <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide4" className="btn btn-circle">❮</a>
-            <a href="#slide2" className="btn btn-circle">❯</a>
+         <div>
+<div
+  className="hero min-h-screen"
+  style={{
+    backgroundImage: "url(https://i.ibb.co.com/pz1KvTJ/10-04-21-The-6-Types-of-Commercial-Real-Estate-Property-new.webp)",
+  }}>
+  <div className="hero-overlay bg-opacity-60 "></div>
+    <div className='items-center max-w-md justify-center text-center grid lg:grid-cols-2 gap-[530px]'>
+         <div id='banner-card' > 
+         <h1 className='text-5xl font-semibold text-white h-[400px] '><span className=''>Welcome to Our <br /> Property World</span> <hr />
+          <p className='text-[14px] my-10'>Read Our Six Step Golden to making your <br /> carbon reduction Strategy Reality</p>
+          <p className='text-[14px] my-10'>Trusted By Many Clients: </p>
+          </h1> 
+         </div>
+        
+        {/* form  */}
+        <div id='form' className="card flex-1  w-full max-w-sm shrink-0 shadow-2xl  container mx-auto">
+      <form className="card-body">
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Email</span>
+          </label>
+          <input type="email" placeholder="email" className="input input-bordered" required />
+        </div>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Password</span>
+          </label>
+          <input type="password" placeholder="password" className="input input-bordered" required />
+          <label className="label">
+            <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+          </label>
+        </div>
+        <div className="form-control mt-6">
+          <button className="btn btn-success">Get Started</button>
+        </div>
+      </form>
+    </div>
+        </div>
+     
+   
+</div>
+
+<div className='flex grid lg:grid-cols-2'>
+
+
+
+</div>
+        <div>
+          
+        </div>
+        {/* About Our Company */}
+        <div className='flex w-[100%] my-20 mx-5 gap-10'>
+          <div className='w-[50%]'> 
+          <img className='' src="https://i.ibb.co.com/xF3g9jg/blog-img-1.png" alt="" />
+
+          </div>
+          <div className='w-[50%]'> 
+         <p>About Our Company</p>
+         <h1>Why You Should Choose Us!</h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br /> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad <br /> minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br /> Duis aute irure dolor in reprehenderit in <br /> voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+         <ul>
+          <li> Elegant Properties</li>
+          <li>  Amazing Locations</li>
+          <li>  Rennovation Service</li>
+          <li> Luxury Setup</li>
+          <li> Quick Service</li>
+         </ul>
+      <button className='btn btn-success my-10'>Get Started</button>
           </div>
         </div>
-        <div id="slide2" className="carousel-item relative w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
-            className="w-full" />
-          <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide1" className="btn btn-circle">❮</a>
-            <a href="#slide3" className="btn btn-circle">❯</a>
-          </div>
-        </div>
-        <div id="slide3" className="carousel-item relative w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
-            className="w-full" />
-          <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide2" className="btn btn-circle">❮</a>
-            <a href="#slide4" className="btn btn-circle">❯</a>
-          </div>
-        </div>
-        <div id="slide4" className="carousel-item relative w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
-            className="w-full" />
-          <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide3" className="btn btn-circle">❮</a>
-            <a href="#slide1" className="btn btn-circle">❯</a>
-          </div>
-        </div>
-      </div>
+
+
+
+
+         </div>
+         
     );
 };
 

@@ -1,18 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Navbar from './Navbar';
 import Banner from './Banner';
 import Footer from './Footer';
 import Card from './Card';
+import { AuthContext } from '../providers/AuthProvider';
 
 const Home = () => {
+    const authInfo = useContext(AuthContext)
+    console.log(authInfo)
     return (
         <div>
+          
             <Navbar></Navbar>
             <Banner></Banner>
-            <div>
-        <h1 id='h1'>Apartments for Sale</h1>
-        <p id='p'>The leading real estate marketplace. Search millions of for-sale and <br /> rental listings, compare home values and connect.</p>
-            </div>
              <Card></Card>
            
           
