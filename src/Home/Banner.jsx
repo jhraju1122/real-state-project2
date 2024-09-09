@@ -1,4 +1,8 @@
 import React from 'react';
+import { IoSettingsOutline } from "react-icons/io5";
+import { FaLocationPinLock } from "react-icons/fa6";
+import { SlLocationPin } from "react-icons/sl";
+import { BiSolidLocationPlus } from 'react-icons/bi';
 
 const Banner = () => {
     return (
@@ -71,12 +75,47 @@ const Banner = () => {
           <li> Luxury Setup</li>
           <li> Quick Service</li>
          </ul>
-      <button className='btn btn-success my-10'>Get Started</button>
+      <button className='btn btn-success my-10 text-white font-bold'>Get Started</button>
           </div>
         </div>
 
-
-
+        {/* Services section  */}
+<section id='Services-section'>
+  <h1 id='Services-h1' className='justify-center text-center items-center'>Services</h1>
+  <div className='heading_line'></div>
+  <div className='grid lg:grid-cols-3 text-black container mx-auto justify-center text-center items-center container mx-auto'> 
+    <div className='flex'>
+      <div></div>
+      <div className='flex'> 
+        <div>
+        <IoSettingsOutline className='gear'></IoSettingsOutline>
+        </div>
+        <div>
+        <p className='gear-p mb-2'>Awesome Service</p>
+        <p>Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit, sed <br /> do eiusmod tempor incididunt ut <br /> labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+    <div className='flex'> 
+     <div>
+     <FaLocationPinLock className='gear'></FaLocationPinLock>
+     </div>
+     <div>
+     <p className='gear-p mb-2'>Free Parking</p>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />  sed do eiusmod tempor incididunt ut <br />  labore et dolore magna aliqua.</p>
+     </div>
+    </div>
+    <div className='flex'> 
+      <div>
+      <SlLocationPin className='gear'></SlLocationPin>
+      </div>
+   <div className='gear-text'>
+   <p className='gear-p mb-2'>Elegant Location</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />  sed do eiusmod tempor incididunt ut <br />  labore et dolore magna aliqua.</p>
+   </div>
+    </div>
+  </div>
+</section>
 
          </div>
          
