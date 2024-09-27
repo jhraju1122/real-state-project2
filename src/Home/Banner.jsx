@@ -3,6 +3,8 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { FaLocationPinLock } from "react-icons/fa6";
 import { SlLocationPin } from "react-icons/sl";
 import { BiSolidLocationPlus } from 'react-icons/bi';
+import StateCard from './StateCard';
+ 
 
 const Banner = () => {
     return (
@@ -45,7 +47,7 @@ const Banner = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-success text-white  text-[1rem]">Get Started</button>
+          <button id='get-started-btn' className="btn  text-white  text-[1rem] w-[150px]">Get Started</button>
         </div>
       </form>
     </div>
@@ -56,12 +58,12 @@ const Banner = () => {
 
 <div className='flex grid lg:grid-cols-2'>
 
-
-
 </div>
-        <div>
-          
-        </div>
+   <div>     
+   </div>
+
+     <StateCard></StateCard>
+
         {/* About Our Company */}
         <div id='about-company' className=' w-[100%] my-20 mx-5 gap-10 grid grid-cols-2'>
           <div  className=' '> 
@@ -80,7 +82,7 @@ const Banner = () => {
           <li> Luxury Setup</li>
           <li> Quick Service</li>
          </ul>
-      <button className='btn btn-success my-10 text-white font-bold'>Get Started</button>
+      <button id='get-started-btn' className='btn btn-success my-10 text-white font-bold'>Get Started</button>
           </div>
         </div>
 
@@ -123,35 +125,39 @@ const Banner = () => {
 </section>
 
 {/* Why You Should Choose Us!  */}
-<section>
+<section id='choose-us-section' className='mt-[3rem]'>
 <div className="hero ">
-  <div className="hero-content flex-col lg:flex-row">
+  <div className="hero-content flex-col lg:flex-row bg-[#363636]">
     <img
-      src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-      className="max-w-sm rounded-lg shadow-2xl" />
+      src=" https://i.ibb.co.com/VWZvnB1/hbghkj.png"
+      className="max-w-lg rounded-lg shadow-2xl " />
     <div>
-      <h1 className="text-5xl font-bold">Why You Should Choose Us!</h1>
-      <p className="py-6">
+      <h1 className="choose-us-title">Why You Should Choose Us!</h1>
+      <p id='choose-us-p' className="py-6 text-white">
+        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+        quasi. In deleniti eaque aut repudiandae et a id nisi.
         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
         quasi. In deleniti eaque aut repudiandae et a id nisi.
       </p>
-      <button className="btn btn-primary">Get Started</button>
+      <button id='get-started-btn' className="btn btn-primary">Get Started</button>
     </div>
   </div>
 </div>
 
-<div className="hero ">
-  <div className="hero-content flex-col lg:flex-row-reverse">
+<div className="hero">
+  <div className="hero-content flex-col lg:flex-row-reverse bg-[#363636]">
     <img
-      src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-      className="max-w-sm rounded-lg shadow-2xl" />
+      src=" https://i.ibb.co.com/Pw1fWBw/blog-img-2.png"
+      className="max-w-lg rounded-lg shadow-2xl" />
     <div>
-      <h1 className="text-5xl font-bold">Why You Should Choose Us!</h1>
-      <p className="py-6">
+      <h1 className="choose-us-title">Why You Should Choose Us!</h1>
+      <p id='choose-us-p' className="py-6 text-white">
+        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+        quasi. In deleniti eaque aut repudiandae et a id nisi.
         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
         quasi. In deleniti eaque aut repudiandae et a id nisi.
       </p>
-      <button className="btn btn-primary">Get Started</button>
+      <button id='get-started-btn' className="btn btn-primary">Get Started</button>
     </div>
   </div>
 </div>
