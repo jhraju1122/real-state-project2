@@ -4,9 +4,31 @@ import { FaLocationPinLock } from "react-icons/fa6";
 import { SlLocationPin } from "react-icons/sl";
 import { BiSolidLocationPlus } from 'react-icons/bi';
 import StateCard from './StateCard';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import auth from '../firebase/firebase.config';
  
 
 const Banner = () => {
+
+  const handleLogin = e =>{
+    e.preventDefault();
+    const text = e.target.text.value;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    console.log(email, password, text)
+
+    // create user 
+    createUserWithEmailAndPassword(auth, email, password)
+    .then(result =>{
+      console.log(result.user);
+    })
+    .catch(error =>{
+      console.error(error);
+    });
+   }
+
+
+
     return (
          <div>
 <div
@@ -25,29 +47,29 @@ const Banner = () => {
         
         {/* form  */}
         <div id='form' className="card flex-1  container mx-auto">
-      <form className="card-body">
+      <form onSubmit={handleLogin} className="card-body">
         <div className="form-control">
           <h1 id='form-title'>Book Your Property Now!</h1>
           <label className="label">
             <span className="label-text">Name</span>
           </label>
-          <input type="text" className='input input-bordered' placeholder='Type your name' />
+          <input type="text" name='text' className='input input-bordered' placeholder='Type your name' />
           <label className="label">
             <span className="label-text">Email</span>
           </label>
-          <input type="email" placeholder="email" className="input input-bordered" required />
+          <input type="email" name='email' placeholder="email" className="input input-bordered" required />
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text">phone</span>
+            <span className="label-text">password</span>
           </label>
-          <input type="phone" placeholder="phone" className="input input-bordered" required />
+          <input type="password" name='password' placeholder="password" className="input input-bordered" required />
           <label className="label">
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label>
         </div>
         <div className="form-control mt-6">
-          <button id='get-started-btn' className="btn  text-white  text-[1rem] w-[150px]">Get Started</button>
+          <button type='submit' id='get-started-btn' className="btn  text-white  text-[1rem] w-[150px]">Get Started</button>
         </div>
       </form>
     </div>

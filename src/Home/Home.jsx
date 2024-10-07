@@ -10,10 +10,8 @@ const Home = () => {
     console.log(authInfo)
     return (
         <div>
-          
             <Navbar></Navbar>
             <Banner></Banner>
-          
             <Footer></Footer>
         </div>
     );

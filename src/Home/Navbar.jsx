@@ -42,14 +42,14 @@ const Navbar = () => {
          
         </div>
         <div className="navbar-center  ">
-        <ul className="menu menu-horizontal px-1 gap-5 text-xl font-bold text-white">
-            <Link className=''  >Home</Link>
-            <Link className=''  >Serveices</Link>
-            <Link className=''  >Properties</Link>
-            <Link className=''  >Offices</Link>
-            <Link className=''  >About us</Link>
-            <Link className='' to="login">Login</Link>
-            <Link className='mr-4' to="/register">Register</Link>
+        <ul className="menu menu-horizontal px-1 gap-5 text-[15px] font-bold text-white">
+            <Link className='' to="/" title='Home'  >Home</Link>
+            <Link className='' title='Serveices' >Serveices</Link>
+            <Link className='' title='Properties' >Properties</Link>
+            <Link className='' title='Offices' >Offices</Link>
+            <Link className='' title='About us' to="about" >About us</Link>
+            <Link className='' title='Login' to="login">Login</Link>
+            <Link className='mr-4' title='Register' to="/register">Register</Link>
           </ul>
           <FaFlagUsa className='text-xl'></FaFlagUsa>
           {/* search button  */}
@@ -69,16 +69,25 @@ const Navbar = () => {
     </button>
 
           <details>
-          <summary> <a className="btn">propile</a></summary>
+          <summary> <a className="btn bg-black text-white">propile</a></summary>
           <ul className="p-2">
-          <li><a className='btn'>
+
+          <Link to="login"><a className='btn bg-black text-white'>
           <div className="avatar">
-  <div className="ring-primary ring-offset-base-100 w-6 rounded-full ring ring-offset-2">
-    <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-  </div>
-</div>
-            user propile</a></li>
-            <li><a className='btn'>update propile</a></li>
+          <div className="ring-primary ring-offset-base-100 w-6 rounded-full ring ring-offset-2">
+          <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+           </div>
+           </div>
+            user propile</a></Link>
+
+            
+            <Link to="updateprofile"><a className='btn bg-black text-white'>
+            <div className="avatar">
+          <div className="ring-primary ring-offset-base-100 w-6 rounded-full ring ring-offset-2">
+          <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+           </div>
+           </div>
+              update propile</a></Link>
            
           </ul>
         </details>
