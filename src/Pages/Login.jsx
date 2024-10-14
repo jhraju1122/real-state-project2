@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Navbar from '../Home/Navbar';
 import { Link } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import auth from '../firebase/firebase.config';
+import { useNavigate } from "react-router-dom";
+
+// import { AuthContext } from '../providers/AuthProvider';
 
 const Login = () => {
+  const navigate = useNavigate();
+  // const {signInUser} = useContext(AuthContext);
+
   const [registerError, setRegisterError] = useState('');
   const [success, setSuccess] = useState(''); 
 
@@ -16,34 +22,14 @@ const Login = () => {
     const accepted = e.target.terms.checked;
     console.log(email, password, accepted);
 
-      //  password at least 6 characters
-    if(password.length < 6){
-      setRegisterError('password should be at least 6 characters or longer');
-    return;
-      }
-     else if(!/[A-Z]/.test(password)){
-    setRegisterError('your password should have at least one upper case characters.')
-    return;
-    }
-    else if(!accepted){
-     setRegisterError('please accepted our terms and conditions!');
-    return;
-    }
-    //  reset user 
-    setRegisterError('');
-    setSuccess('');
 
-
-    // add validation
-    signInWithEmailAndPassword(auth, email, password )
+     signInWithEmailAndPassword(auth,email, password)
     .then(result =>{
-      console.log(result.user)
-      setSuccess('User Logged in Successfully.')
+      navigate("/");
+
     })
-    .catch(error =>{
-      console.error(error);
-      setRegisterError(error.message);
-    }) 
+    .catch(error => console.error(error))
+
    }
 
 

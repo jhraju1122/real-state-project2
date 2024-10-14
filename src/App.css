@@ -181,7 +181,7 @@ p{
   font-weight: 800;
   text-align: left;
   padding: 0em;
-  color: #353535;
+  color: #fff;
   text-transform: capitalize;
   font-family: 'Outfit', 'arial', sans-serif;
   scroll-behavior: smooth;
@@ -199,7 +199,7 @@ p{
   transition-duration: 1.2s;
   transition-property: opacity,transform;
   font-size: 1rem;
-  color: #4c4b4b;
+  color: #ffffff;
   font-weight: 400;
   font-family: 'Outfit', 'arial', sans-serif;
   scroll-behavior: smooth;
@@ -227,7 +227,7 @@ p{
   transition-duration: 1.2s;
   transition-property: opacity,transform;
   font-size: 1rem;
-  color: #fff !important;
+   color: #fff;
   font-weight: 400;
   font-family: 'Outfit', 'arial', sans-serif;
   scroll-behavior: smooth;
@@ -236,4 +236,7 @@ p{
   box-sizing: border-box;
   line-height: 1.5;
   text-align: left;
+}
+h1{
+  color: #fff;
 }

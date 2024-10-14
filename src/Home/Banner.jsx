@@ -3,7 +3,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { FaLocationPinLock } from "react-icons/fa6";
 import { SlLocationPin } from "react-icons/sl";
 import { BiSolidLocationPlus } from 'react-icons/bi';
-import StateCard from './StateCard';
+ 
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import auth from '../firebase/firebase.config';
  
@@ -84,7 +84,6 @@ const Banner = () => {
    <div>     
    </div>
 
-     <StateCard></StateCard>
 
         {/* About Our Company */}
         <div id='about-company' className=' w-[100%] my-20 mx-5 gap-10 grid grid-cols-2'>
@@ -154,7 +153,7 @@ const Banner = () => {
       src=" https://i.ibb.co.com/VWZvnB1/hbghkj.png"
       className="max-w-lg rounded-lg shadow-2xl " />
     <div>
-      <h1 className="choose-us-title">Why You Should Choose Us!</h1>
+      <h1 className="choose-us-title text-white">Why You Should Choose Us!</h1>
       <p id='choose-us-p' className="py-6 text-white">
         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
         quasi. In deleniti eaque aut repudiandae et a id nisi.

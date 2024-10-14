@@ -1,28 +1,37 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-const realState = ({ realState }) => {
-     const { image, estate_title, id, segment_name, description, price, status, area, location, facilities, view_property } = realState;
-
-
+const RealState = ({realState}) => {
+    const {id, image, segment_name, price, status, area ,facilities,description, view_property,estate_title, location, } = realState;
     return (
-        <div>
-           <div className="card bg-base-100 w-96 shadow-xl">
-        <figure>
+         <div className="card bg-base-100 w-96 shadow-xl">
+        <figure className="px-10 pt-10">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-            alt="Shoes" />
+            src= {image}
+            alt="Shoes"
+            className="rounded-xl" />
         </figure>
-        <div className="card-body">
-          <h2 className="card-title">{realState.estate_title}</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <Link>View Property</Link>
+        <div className="card-body items-center text-center">
+          <h1 className="card-title">{estate_title}</h1>
+          <h1>Id:{id}</h1>
+          <h1>segment name: {segment_name} </h1>
+          <h1>About property: {description}</h1>
+          <h1>price: {price}</h1>
+          <h1>Status: {status}</h1>
+          <h1>Area: {area}</h1>
+          <h1>location: {location}</h1>
+          <h1>description: If a dog chews shoes whose shoes does he choose?</h1>
+          <h1> facilities: {facilities}</h1>
+          <h1> view property: {view_property}</h1>
+          <div className="card-actions">
+          <button className="btn btn-primary">View Property</button>
           </div>
         </div>
       </div>
-        </div>
     );
 };
 
-export default realState;
+export default RealState;
+
+
+ 
+ 

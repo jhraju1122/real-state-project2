@@ -26,8 +26,8 @@ const Register = () => {
       setRegisterError('password should be at least 6 characters or longer');
       return;
     }
-    else if(!/[A-Z]/.test(password)){
-      setRegisterError('your password should have at least one upper case characters.')
+    else if(!/[a-z]/.test(password)){
+      setRegisterError('your password should have at least one lowar case characters.')
       return;
     }
     else if(!accepted){
