@@ -10,13 +10,15 @@ import {
 import Home from './Home/Home.jsx';
 import Register from './Pages/Register.jsx';
 import Login from './Pages/Login.jsx';
- 
+ import ErrorPage from '../src/Errorpage/ErrorPage.jsx'
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home></Home>
+    element: <Home></Home>,
+    errorElement: <ErrorPage></ErrorPage>,
+    
   },
   {
     path: "/login",

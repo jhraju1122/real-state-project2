@@ -4,10 +4,14 @@ import { Link } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import auth from '../firebase/firebase.config';
 import { useNavigate } from "react-router-dom";
+ 
 
 // import { AuthContext } from '../providers/AuthProvider';
-
+ 
 const Login = () => {
+ 
+
+
   const navigate = useNavigate();
   // const {signInUser} = useContext(AuthContext);
 
@@ -31,6 +35,7 @@ const Login = () => {
     .catch(error => console.error(error))
 
    }
+
 
 
 
@@ -64,6 +69,10 @@ const Login = () => {
                   <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                 </label>
               </div>
+
+              
+
+
               <div className="form-control mt-6">
                 <button type='submit' className="btn btn-primary">Login</button>
 
@@ -82,6 +91,8 @@ const Login = () => {
             <p>You have not already an account? please <Link to="/register">
             <button type='submit' className="btn btn-link">Sign Up</button>
             </Link> </p>
+
+            <button className='btn'>Goole Login</button>
           </div>
         </div>
       </div>

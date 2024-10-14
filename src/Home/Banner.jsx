@@ -6,6 +6,7 @@ import { BiSolidLocationPlus } from 'react-icons/bi';
  
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import auth from '../firebase/firebase.config';
+import Slider from './Slider';
  
 
 const Banner = () => {
@@ -88,7 +89,7 @@ const Banner = () => {
         {/* About Our Company */}
         <div id='about-company' className=' w-[100%] my-20 mx-5 gap-10 grid grid-cols-2'>
           <div  className=' '> 
-          <img id='about-img' className='img-fluid' src="https://i.ibb.co.com/xF3g9jg/blog-img-1.png" alt="" />
+         <Slider></Slider>
 
           </div>
           <div id='about-section' className=''> 
@@ -152,6 +153,7 @@ const Banner = () => {
     <img
       src=" https://i.ibb.co.com/VWZvnB1/hbghkj.png"
       className="max-w-lg rounded-lg shadow-2xl " />
+      
     <div>
       <h1 className="choose-us-title text-white">Why You Should Choose Us!</h1>
       <p id='choose-us-p' className="py-6 text-white">

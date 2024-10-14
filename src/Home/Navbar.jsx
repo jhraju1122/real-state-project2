@@ -4,6 +4,7 @@ import { FaFlagUsa } from "react-icons/fa";
 import { FiHome } from "react-icons/fi";
 
 const Navbar = () => {
+  
     return (
         <div className="navbar">
         <div className="navbar-start ">
