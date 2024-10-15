@@ -11,13 +11,15 @@ import Home from './Home/Home.jsx';
 import Register from './Pages/Register.jsx';
 import Login from './Pages/Login.jsx';
  import ErrorPage from '../src/Errorpage/ErrorPage.jsx'
+import DetailsPage from './RealState/DetailsPage.jsx';
+// import AuthProvider from './providers/AuthProvider.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
-    errorElement: <ErrorPage></ErrorPage>,
+    errorElement: <ErrorPage></ErrorPage>
     
   },
   {
@@ -27,7 +29,11 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <Register></Register>
-  }
+  },
+  {
+    path: "/detailsPage",
+    element: <DetailsPage></DetailsPage> 
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

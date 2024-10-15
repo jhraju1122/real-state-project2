@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const RealState = ({realState}) => {
     const {id, image, segment_name, price, status, area ,facilities,description, view_property,estate_title, location, } = realState;
@@ -23,7 +24,7 @@ const RealState = ({realState}) => {
           <h1> facilities: {facilities}</h1>
           <h1> view property: {view_property}</h1>
           <div className="card-actions">
-          <button className="btn btn-primary">View Property</button>
+          <Link to="/detailsPage" className="btn btn-primary">View Property</Link>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { IoSettingsOutline } from "react-icons/io5";
 import { FaLocationPinLock } from "react-icons/fa6";
 import { SlLocationPin } from "react-icons/sl";
-import { BiSolidLocationPlus } from 'react-icons/bi';
+ 
  
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import auth from '../firebase/firebase.config';

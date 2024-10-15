@@ -4,17 +4,19 @@ import { Link } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import auth from '../firebase/firebase.config';
 import { useNavigate } from "react-router-dom";
- 
-
 // import { AuthContext } from '../providers/AuthProvider';
  
-const Login = () => {
+
  
+ 
+const Login = () => {
+
 
 
   const navigate = useNavigate();
-  // const {signInUser} = useContext(AuthContext);
-
+  
+  // const {logInUser} = useContext(AuthContext);
+  const [user, setUser] = useState(null);
   const [registerError, setRegisterError] = useState('');
   const [success, setSuccess] = useState(''); 
 
@@ -27,7 +29,7 @@ const Login = () => {
     console.log(email, password, accepted);
 
 
-     signInWithEmailAndPassword(auth,email, password)
+    signInWithEmailAndPassword(auth, email, password)
     .then(result =>{
       navigate("/");
 

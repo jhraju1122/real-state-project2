@@ -1,10 +1,21 @@
-import React from 'react';
+// import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { FaFlagUsa } from "react-icons/fa";
 import { FiHome } from "react-icons/fi";
+import { signOut } from 'firebase/auth';
+// import { AuthContext } from '../providers/AuthProvider'; 
 
 const Navbar = () => {
-  
+  //  const {user, logOut} =useContext(AuthContext)
+    
+   const handleLogOut = () =>{
+    signOut()
+    .then(()=>console.log('user logged out'))
+    .catch(error =>console.error(error))
+   }
+
+
+
     return (
         <div className="navbar">
         <div className="navbar-start ">
@@ -49,7 +60,13 @@ const Navbar = () => {
             <Link className='' title='Properties' >Properties</Link>
             <Link className='' title='Offices' >Offices</Link>
             <Link className='' title='About us' to="about" >About us</Link>
-            <Link className='' title='Login' to="login">Login</Link>
+            <Link className='' title='login' to="/login" >LogIn</Link>
+            
+        {/* {
+            user? <Link><button onClick={handleSignOut} className="btn bg-blue-400 hover:bg-blue-500 text-white ">SignOut</button></Link>:
+            <Link to='/login'><button className="btn bg-blue-400 hover:bg-blue-500 text-white ">Login</button></Link>
+        } */}
+        
             <Link className='mr-4' title='Register' to="/register">Register</Link>
           </ul>
           <FaFlagUsa className='text-xl'></FaFlagUsa>
